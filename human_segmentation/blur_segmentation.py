@@ -22,6 +22,7 @@ LABEL_NAMES = [
     'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tv'
 ]
 
+#이미지 한장씩 불러오기
 img_paths = glob(os.path.join('images','*.png'))
 for img_path in img_paths:
     img_orig = cv2.imread(img_path)
